@@ -1,76 +1,84 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INTIMA - تسجيل الدخول</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="../dist/output.css">
-    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body class="font-sans">
-    <div class="min-h-screen bg-gradient-to-br from-blue-900 to-blue-800 flex flex-col items-center justify-center relative overflow-hidden">
+
+<body class="cairo">
+    <div
+        class="min-h-screen bg-gradient-to-br from-blue-900 to-blue-800 flex flex-col items-center justify-center relative overflow-hidden">
         <!-- Background overlay -->
-        <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('https://images.pexels.com/photos/7070/space-desk-workspace-coworking.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
-        
+        <div class="absolute inset-0 bg-cover bg-center opacity-10"
+            style="background-image: url('https://images.pexels.com/photos/7070/space-desk-workspace-coworking.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+        </div>
+
         <!-- Main content container -->
         <div class="w-full max-w-md px-6 py-8 z-10 flex flex-col items-center">
             <!-- Logo -->
             <div class="mb-6 transform hover:scale-105 transition-transform duration-300">
                 <img src="logo.svg" alt="INTIMA Logo" class="h-16">
             </div>
-            
+
             <!-- Arabic heading -->
 
             <!-- <h1 class="text-white text-2xl font-bold mb-8 text-center">الدخول على المنصة</h1> -->
             <div class="relative inline-block mb-8">
-                <div class="absolute bottom-0 left-0 right-3 h-1/2 bg-gradient-to-r from-transparent to-blue-400  -z-10"></div>
+                <div
+                    class="absolute bottom-0 left-0 right-3 h-1/2 bg-gradient-to-r from-transparent to-blue-400  -z-10">
+                </div>
                 <h1 class="relative text-white text-2xl font-bold text-center px-4 py-1 ">الدخول على المنصة</h1>
-              </div>
+            </div>
             <!-- Language selector buttons -->
             <div class="flex gap-4 mb-8 mt-2">
                 <!-- <button class="bg-white hover:bg-opacity-30 text-blue-400 py-2 px-6 rounded-full transition duration-300 text-sm">باحث عن عمل</button>
                 <button class="bg-white hover:bg-opacity-30 text-blue-400 py-2 px-6 rounded-full transition duration-300 text-sm">صاحب عمل</button>    -->
-                
+
                 <div>
                     <input type="radio" name="role" id="seeker" class="peer hidden">
                     <label for="seeker"
-                           class="cursor-pointer bg-white hover:bg-opacity-30 text-blue-400 peer-checked:bg-blue-500 peer-checked:text-white py-2 px-6 rounded-full transition duration-300 text-sm inline-block">
-                      باحث عن عمل
+                        class="cursor-pointer bg-white hover:bg-opacity-30 text-blue-400 peer-checked:bg-blue-500 peer-checked:text-white py-2 px-6 rounded-full transition duration-300 text-sm inline-block">
+                        باحث عن عمل
                     </label>
-                  </div>
-                
-                  <!-- Button Option 2 -->
-                  <div>
+                </div>
+
+                <!-- Button Option 2 -->
+                <div>
                     <input type="radio" name="role" id="employer" class="peer hidden">
                     <label for="employer"
-                           class="cursor-pointer bg-white hover:bg-opacity-30 text-blue-400 peer-checked:bg-blue-500 peer-checked:text-white py-2 px-6 rounded-full transition duration-300 text-sm inline-block">
-                      صاحب عمل
+                        class="cursor-pointer bg-white hover:bg-opacity-30 text-blue-400 peer-checked:bg-blue-500 peer-checked:text-white py-2 px-6 rounded-full transition duration-300 text-sm inline-block">
+                        صاحب عمل
                     </label>
-                  </div>
-                
-       
-       
-       
+                </div>
+
+
+
+
             </div>
-            
+
             <!-- Login form -->
             <form class="w-full">
                 <div class="mb-4">
-                    <input type="text" placeholder="اسم المستخدم / البريد الإلكتروني" class="w-full bg-white rounded-full py-3 px-6 text-right focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all duration-300">
+                    <input type="text" placeholder="اسم المستخدم / البريد الإلكتروني"
+                        class="w-full bg-white rounded-full py-3 px-6 text-right focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all duration-300">
                 </div>
                 <div class="mb-6">
-                    <input type="password" placeholder="كلمة المرور" class="w-full bg-white rounded-full py-3 px-6 text-right focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all duration-300">
+                    <input type="password" placeholder="كلمة المرور"
+                        class="w-full bg-white rounded-full py-3 px-6 text-right focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all duration-300">
                 </div>
                 <div class="flex justify-center">
-                    <button type="submit" class="bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-12 rounded-full transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300">
+                    <button type="submit"
+                        class="bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-12 rounded-full transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300">
                         دخول
                     </button>
                 </div>
             </form>
         </div>
-        
+
         <!-- Footer -->
         <div class="absolute bottom-4 text-white text-center text-sm opacity-70">
             <p>© 2024 جميع الحقوق محفوظة لشركة انتماء</p>
@@ -79,4 +87,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
