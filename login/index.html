@@ -6,6 +6,8 @@
     <title>INTIMA - تسجيل الدخول</title>
     <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="../dist/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body class="font-sans">
     <div class="min-h-screen bg-gradient-to-br from-blue-900 to-blue-800 flex flex-col items-center justify-center relative overflow-hidden">
@@ -20,12 +22,37 @@
             </div>
             
             <!-- Arabic heading -->
-            <h1 class="text-white text-2xl font-bold mb-8 text-center">الدخول على المنصة</h1>
-            
+
+            <!-- <h1 class="text-white text-2xl font-bold mb-8 text-center">الدخول على المنصة</h1> -->
+            <div class="relative inline-block mb-8">
+                <div class="absolute bottom-0 left-0 right-3 h-1/2 bg-gradient-to-r from-transparent to-blue-400  -z-10"></div>
+                <h1 class="relative text-white text-2xl font-bold text-center px-4 py-1 ">الدخول على المنصة</h1>
+              </div>
             <!-- Language selector buttons -->
-            <div class="flex gap-4 mb-6">
-                <button class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white py-2 px-6 rounded-full transition-all duration-300 text-sm">تسجيل الدخول</button>
-                <button class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white py-2 px-6 rounded-full transition-all duration-300 text-sm">حساب جديد</button>
+            <div class="flex gap-4 mb-8 mt-2">
+                <!-- <button class="bg-white hover:bg-opacity-30 text-blue-400 py-2 px-6 rounded-full transition duration-300 text-sm">باحث عن عمل</button>
+                <button class="bg-white hover:bg-opacity-30 text-blue-400 py-2 px-6 rounded-full transition duration-300 text-sm">صاحب عمل</button>    -->
+                
+                <div>
+                    <input type="radio" name="role" id="seeker" class="peer hidden">
+                    <label for="seeker"
+                           class="cursor-pointer bg-white hover:bg-opacity-30 text-blue-400 peer-checked:bg-blue-500 peer-checked:text-white py-2 px-6 rounded-full transition duration-300 text-sm inline-block">
+                      باحث عن عمل
+                    </label>
+                  </div>
+                
+                  <!-- Button Option 2 -->
+                  <div>
+                    <input type="radio" name="role" id="employer" class="peer hidden">
+                    <label for="employer"
+                           class="cursor-pointer bg-white hover:bg-opacity-30 text-blue-400 peer-checked:bg-blue-500 peer-checked:text-white py-2 px-6 rounded-full transition duration-300 text-sm inline-block">
+                      صاحب عمل
+                    </label>
+                  </div>
+                
+       
+       
+       
             </div>
             
             <!-- Login form -->

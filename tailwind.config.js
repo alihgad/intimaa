@@ -11,6 +11,10 @@ module.exports = {
         secondary: '#ffed4a',
         danger: '#e3342f',
       },
+       borderRadius: {
+        '4xl': '2rem', 
+        '5xl': '2.5rem',  
+      },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
       },
