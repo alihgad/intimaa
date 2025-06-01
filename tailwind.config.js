@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./login/**/*.{html,js}",
     "./**/*.html",
   ],
   theme: {
@@ -16,7 +15,7 @@ module.exports = {
         '5xl': '2.5rem',  
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Cairo', 'Inter', 'sans-serif'],
       },
       container: {
         center: true,
