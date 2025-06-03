@@ -11,98 +11,170 @@
 </head>
 <body class="cairo">
 
-<div class="w-5/6 mx-auto mt-8 mb-8">
-     <div class="relative w-fit mx-auto mb-2">
-  <!-- Gradient behind the heading -->
-  <div class="absolute left-0 top-8 bottom-0 right-4 h-5 bg-gradient-to-r from-transparent to-blue-400  -z-10"></div>
 
-  <!-- Heading Text -->
-  <h1 class="relative text-blue-800 text-3xl font-bold text-center px-6 py-4">مسار الصفوف الأوليه</h1>
-</div>
-<p class="text-center text-gray-400">الرجاء يتم تعبئه النموذج التالي و سوف يتواصل معك فريق المبيعات</p>
+
+<header class="fixed top-0 left-0 right-0 z-50 ">
+<div class="w-5/6 mx-auto">
+  <div class="bg-transparent mt-2 backdrop-blur-sm border-b border-sky-500" dir="rtl">
+  <div class="container mx-auto px-4 py-2">
+    <div class="flex justify-between items-center text-sm text-white/80">
+      
+      <div class="flex items-center gap-2">
+        <span class="text-gray-300">عربي</span>
+        <span class="text-gray-300">|</span>
+        <span class="text-gray-300">EN</span>
+      </div>
+
+    <div class="flex items-center gap-2" dir="rtl">
+  <div class="flex items-center gap-2">
+    <Mail size={14} />
+    <span class="block px-4 text-blue-800 hover:text-sky-500 transition duration-200 ease-in-out transform  hover:scale-105 ">تواصل معنا</span>
+  </div>
+
+  <span class="text-white/40">|</span>
+  <div class="flex items-center gap-2">
+    <Phone size={14} />
+    <span class="text-blue-800 hover:text-white transition duration-200">+966 50 123 4567</span>
+  </div>
 </div>
 
-<div class="relative w-3/4 mx-auto bg-gray-100 p-4 rounded-xl ">
+
+    </div>
+  </div>
+</div>
+
+
+<nav class="bg-transparent text-blue-800" dir="rtl">
+  <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+    <!-- Right: Logo + Links -->
+    <div class="flex items-center gap-8">
+      <!-- Logo -->
+      <img src="../imgs/Group 473.png" alt="Logo" class="h-8 w-auto" />
+
+      <!-- Desktop Links -->
+      <div class="hidden lg:flex items-center gap-2 font-medium">
+        <a href="#" class="transition hover:text-sky-500 hover:scale-110">الرئيسية</a>
+        <span class="text-sky-500 select-none">|</span>
+
+        <!-- Dropdown -->
+        <div class="relative group">
+          <button class="flex items-center gap-1 px-2 py-1 hover:text-sky-500 hover:bg-blue-950 transition hover:scale-110">
+            الخدمات الاسعار
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="absolute top-full left-[-6px] mt-1 w-64 bg-blue-950 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 text-right z-20">
+            <a href="#" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-sky-500">مسار الوظائف القيادية التنفيذيه</a>
+            <a href="#" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-sky-500">مسار الوظائف الاداريه الفنيه</a>
+            <a href="#" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-sky-500">مسار الصفوف الاوليه</a>
+          </div>
+        </div>
+
+        <span class="text-blue-400 select-none">|</span>
+        <a href="#" class="transition hover:text-sky-500 hover:scale-110">إعلان الوظائف</a>
+        <span class="text-sky-500 select-none">|</span>
+        <a href="#" class="transition hover:text-sky-500 hover:scale-110">الباحثون عن العمل</a>
+      </div>
+    </div>
+
+    <!-- Mobile/Tablet Toggle Button -->
+    <button id="menu-toggle" class="lg:hidden focus:outline-none">
+      <svg class="w-6 h-6 text-blue-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Left: Login/Register (Desktop only) -->
+    <div class="hidden lg:flex items-center gap-2">
+      <a href="#" class="text-white font-light hover:text-sky-500 hover:translate-x-1">تسجيل الدخول</a>
+      <button class="bg-sky-500 text-white text-xs px-4 py-1 rounded-full hover:scale-105 transition">حساب جديد</button>
+    </div>
+  </div>
+
+  <!-- Mobile/Tablet Menu -->
+  <div id="mobile-menu" class="lg:hidden hidden px-4 pb-4 text-right space-y-3 bg-blue-950">
+    <a href="#" class="block hover:text-sky-400">الرئيسية</a>
+    <details class="group">
+      <summary class="cursor-pointer hover:text-sky-400">الخدمات الاسعار</summary>
+      <div class="pl-4 space-y-2 text-sm text-gray-300">
+        <a href="#" class="block hover:text-white">مسار الوظائف القيادية التنفيذيه</a>
+        <a href="#" class="block hover:text-white">مسار الوظائف الاداريه الفنيه</a>
+        <a href="#" class="block hover:text-white">مسار الصفوف الاوليه</a>
+      </div>
+    </details>
+    <a href="#" class="block hover:text-sky-400">إعلان الوظائف</a>
+    <a href="#" class="block hover:text-sky-400">الباحثون عن العمل</a>
+    <hr class="border-gray-700" />
+    <a href="#" class="block hover:text-sky-400">تسجيل الدخول</a>
+    <button class="w-full bg-sky-500 text-white px-4 py-1  rounded-full">حساب جديد</button>
+  </div>
+</nav>
+</div>
+</header> 
+
+
+
+
+<!-- Heading Section -->
+<div class="w-11/12 lg:w-5/6 mx-auto mt-24 mb-8 text-center">
   <div class="relative w-fit mx-auto mb-2">
-    <div class="absolute left-4 right-5 bottom-0 top-7 h-3 bg-gradient-to-r from-transparent to-blue-400 z-0"></div>
-    <h3 class="relative text-blue-800 text-lg font-bold text-center px-6 py-3 z-10">تواصل معنا</h3>
+    <div class="absolute left-0 top-8 bottom-0 right-4 h-5 bg-gradient-to-r from-transparent to-sky-500 -z-10"></div>
+    <h1 class="relative text-blue-800 text-3xl font-bold px-6 py-4">
+      مسار الصفوف الأوليه
+    </h1>
+  </div>
+  <p class="text-gray-400">الرجاء يتم تعبئه النموذج التالي و سوف يتواصل معك فريق المبيعات</p>
+</div>
+
+<!-- Form Section -->
+<div class="relative w-11/12 lg:w-3/4 mx-auto bg-gray-100 p-6 rounded-xl">
+  <div class="relative w-fit mx-auto mb-4">
+    <div class="absolute left-4 right-5 bottom-0 top-7 h-3 bg-gradient-to-r from-transparent to-sky-500 z-0"></div>
+    <h3 class="relative text-blue-800 text-lg font-bold text-center px-6 py-3 z-10">
+      تواصل معنا
+    </h3>
   </div>
 
   <p class="text-center text-gray-400 mb-6">ادخل البيانات</p>
 
-  <!-- Form -->
-  <div class="w-full max-w-3xl mx-auto">
-    <form class="space-y-4">
-   <div class="flex flex-col md:flex-row gap-4">
-  <input
-    type="text"
-    placeholder="اسم الشركه"
-    class="w-full md:basis-2/5 px-4 py-3 border rounded-3xl border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
-  />
- <input
-            type="text"
-            placeholder=" نوع الطلب"
-            class="w-full px-4 py-3 rounded-3xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
-          >
-          <select
-            class="w-full px-4 py-3 rounded-3xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-500"
-          >
-            <option value="">طلب توظيف</option>
-            <option value="riyadh">طلب تسعير</option>
-          </select>
-          
-</div>
+  <form class="space-y-6 w-full max-w-4xl mx-auto">
+    <!-- Row 1 -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <input type="text" placeholder="اسم الشركه" class="w-full px-4 py-3 border rounded-3xl border-gray-300 focus:outline-none focus:ring-2 focus:ring-sky-500" />
+      <input type="text" placeholder="نوع الطلب" class="w-full px-4 py-3 border rounded-3xl border-gray-300 focus:outline-none focus:ring-2 focus:ring-sky-500" />
+      <select class="w-full px-4 py-3 rounded-3xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-sky-500 text-gray-500">
+        <option value="">طلب توظيف</option>
+        <option value="riyadh">طلب تسعير</option>
+      </select>
+    </div>
 
+    <!-- Row 2 -->
+    <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4">
+      <input type="text" placeholder="الاسم" class="w-full px-4 py-3 rounded-3xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-sky-500" />
+      <input type="email" placeholder="البريد الإلكتروني" class="w-full px-4 py-3 rounded-3xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-sky-500" />
+      <input type="tel" placeholder="رقم الجوال" dir="rtl" class="w-full px-4 py-3 rounded-3xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-sky-500" />
+    </div>
 
-<div class="grid grid-cols-3 gap-x-4">
-    <input
-      type="text"
-      placeholder="الاسم"
-      class="w-full px-4 py-3 rounded-3xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
-    />
-    <input
-      type="email"
-      placeholder="البريد الإلكتروني"
-      class="w-full px-4 py-3 rounded-3xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
-    />
-  <input
-    type="tel"
-    placeholder="رقم الجوال"
-    class="w-full px-4 py-3 rounded-3xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
-    dir="rtl"
-  />
-</div>
+    <!-- Row 3 -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <input type="text" placeholder="مسمي الوظائف" class="w-full px-4 py-3 border rounded-3xl border-gray-300 focus:outline-none focus:ring-2 focus:ring-sky-500" />
+      <input type="number" placeholder="العدد" class="w-full px-4 py-3 border rounded-3xl border-gray-300 focus:outline-none focus:ring-2 focus:ring-sky-500" />
+    </div>
 
- <div class="flex flex-col md:flex-row gap-4">
-        <input
-          type="text"
-          placeholder=" مسمي الوظائف"
-          class="w-full md:basis-3/5 px-4 py-3 border rounded-3xl border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
-        />
-        <input
-          type=""
-          placeholder="العدد"
-          class="w-full md:basis-2/5 px-4 py-3 border rounded-3xl border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
-        />
-      </div>
-
-<div class="flex justify-center">
-  <button
-    type="submit"
-    class="bg-blue-400 text-white px-5 py-2 rounded-3xl hover:bg-blue-500 transition-colors text-xs"
-  >
-    ارسال
-  </button>
-</div>
-
-
-    </form>
-  </div>
+    <!-- Submit Button -->
+    <div class="flex justify-center">
+      <button type="submit" class="bg-sky-500 text-white px-6 py-2 rounded-3xl hover:bg-sky-600 transition-colors text-sm">
+        ارسال
+      </button>
+    </div>
+  </form>
 </div>
 
 
 
-    <div class="w-3/4 mx-auto bg-blue-900 mt-28 rounded-xl p-5  mb-10">
+
+    <div class="w-3/4 mx-auto bg-blue-900 mt-16 rounded-xl p-5  mb-10">
     <h3 class="text-center text-white font-bold text-2xl pt-4">نساعدك في العثور علي الموظف المثالي</h3>
 
 <div class="flex justify-center">
@@ -120,13 +192,88 @@
 
 
 
+<footer class="rounded-t-3xl mt-14 bg-cover bg-center bg-no-repeat" style="background-image: url('../imgs/Group\ 478.png');">
+  <div class="container mx-auto px-4 sm:px-6 md:px-8 py-12">
+    <div class="w-full md:w-5/6 mx-auto">
+
+      <!-- Row 1: Social Links -->
+      <div class="flex flex-col md:flex-row md:justify-end items-center gap-4 mb-8 text-center md:text-right">
+        <h3 class="text-white font-bold text-lg mb-0">تابعونا على</h3>
+        <div class="flex justify-center md:justify-end gap-2">
+          <a href="#" class="bg-blue-700 p-2 rounded-full hover:bg-blue-600 transition-colors">
+           <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="bg-blue-700 p-2 rounded-full hover:bg-blue-600 transition-colors">
+          <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="bg-blue-700 p-2 rounded-full hover:bg-blue-600 transition-colors">
+          <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" class="bg-blue-700 p-2 rounded-full hover:bg-blue-600 transition-colors">
+           <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Row 2: Links + Contact Info -->
+      <div class="flex flex-col md:flex-row justify-between gap-8 border-b border-blue-700 pb-8">
+
+        <!-- Quick Links -->
+        <div class="w-full md:w-1/2 text-center md:text-right">
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-300 hover:text-white transition-transform duration-300 transform hover:scale-110">الرئيسية</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-transform duration-300 transform hover:scale-110">الخدمات والأسعار</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-transform duration-300 transform hover:scale-110">إعلان الوظائف</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-transform duration-300 transform hover:scale-110">الباحثون عن العمل</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="w-full md:w-1/2 space-y-4 text-center md:text-left">
+          <div class="flex flex-col sm:flex-row items-center justify-center md:justify-end gap-2 text-white">
+            <span dir="ltr">+966 500 432 555</span>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+          </div>
+          <div class="flex flex-col sm:flex-row items-center justify-center md:justify-end gap-2 text-white">
+            <span>E-mail: HR@1ar.sa</span>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+          </div>
+     <div class="flex flex-col-reverse sm:flex-row items-center justify-center md:justify-end gap-2 text-white">
+  <div class="text-center sm:text-left">
+    <span>Al Thumamh Rd., Al Rabea</span><br>
+    <span>Riyadh, Saudi Arabia</span>
+  </div>
+  <svg class="w-5 h-5 mt-1" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+  </svg>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- Bottom Footer -->
+
+<div class="container">
+  <div class="w-5/6 mx-auto">
+    <div class="flex justify-between items-center p-3">
+      <img src="../imgs/Group 472.png" alt="Intima Logo" class="h-8" />
+      <p class="text-gray-400 text-sm">© 2024 جميع الحقوق محفوظة لشركة انتماء</p>
+    </div>
+</div>
+</div>
 
 
 
 
 
 
-
-    <script src="script.js"></script>
+    <script src="../dist/script.js"></script>
 </body>
 </html>
