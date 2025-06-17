@@ -27,3 +27,21 @@ window.addEventListener("scroll", () => {
     nav.classList.remove("bg-white", "rounded-lg"); // Remove on scroll up
   }
 });
+
+
+let moreButton = document.querySelector(".more-button");
+let loader = document.querySelector(".loader");
+
+moreButton.addEventListener("click", async function () {
+  // loader.classList.toggle("hidden"); 
+  moreButton.innerHTML = `<div class="fas fa-spinner fa-pulse text-white "></div>`
+
+  let data = await fetch("https://jsonplaceholder.typicode.com/posts")
+
+  // ده هيتمسح انا عامله عشان ياخد وقت بس
+  setTimeout(() => {
+    moreButton.innerHTML = `المزيد`;
+  }
+, 2000);      
+
+})
