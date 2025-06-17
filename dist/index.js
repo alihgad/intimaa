@@ -38,10 +38,6 @@ moreButton.addEventListener("click", async function () {
 
   let data = await fetch("https://jsonplaceholder.typicode.com/posts")
 
-  // ده هيتمسح انا عامله عشان ياخد وقت بس
-  setTimeout(() => {
-    moreButton.innerHTML = `المزيد`;
-  }
-, 2000);      
+  moreButton.innerHTML = `المزيد`;
 
 })
