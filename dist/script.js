@@ -101,23 +101,11 @@ function updateDots(index) {
   });
 }
 
-  // function startAutoSlide() {
-  //   stopAutoSlide();
-  //   slideInterval = setInterval(nextSlide, 5000);
-  // }
 
-  // function stopAutoSlide() {
-  //   if (slideInterval) clearInterval(slideInterval);
-  // }
 
   // ربط الدوال بالأزرار الموجودة في HTML
   window.nextSlide = nextSlide;
   window.prevSlide = prevSlide;
 
-  // تشغيل السلايدر تلقائياً
-  // startAutoSlide();
 
-  // إيقاف المؤقت عند المرور بالماوس
-  // slider.addEventListener('mouseenter', stopAutoSlide);
-  // slider.addEventListener('mouseleave', startAutoSlide);
 });
