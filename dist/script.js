@@ -9,27 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// change top header when scroll
 
-const topBar = document.querySelector(".bg-transparent.mt-2");
-const nav = document.querySelector("nav"); // Select the nav element
-
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 0) {
-    nav.classList.remove("bg-transparent");
-    nav.classList.add("bg-blue-800", "rounded-lg");
-    topBar.classList.remove("bg-transparent");
-    topBar.classList.add("bg-blue-800", "rounded-lg");
-  } else {
-    nav.classList.add("bg-transparent", "text-white");
-    nav.classList.remove("bg-blue-800", "rounded-lg");
-    topBar.classList.add("bg-transparent");
-    topBar.classList.remove("bg-blue-800", "rounded-lg");
-  }
-});
-
-// change colors on scroll navbar
 
 
 

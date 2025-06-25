@@ -1,294 +1,434 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INTIMA -</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>INTIMA -</title>
-  <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
-  <!-- <link rel="stylesheet" href="../dist/all.min.css"> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="../dist/output.css" />
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- <link rel="stylesheet" href="../dist/all.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-</head>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
 
-<body class="cairo">
-  <!-- background -->
-  <div class="min-h-screen relative " dir="rtl">
+  <body class="cairo">
+    <!-- background -->
+    <div class="min-h-screen relative" dir="rtl">
+      <div class="mx-auto h-screen flex items-center justify-start">
+        <div class="text-right max-w-xl px-6">
+          <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+            شركة انتماء للتوظيف
+          </h1>
+          <button
+            type="button"
+            class="bg-sky-500 text-white px-5 py-1 rounded-3xl hover:bg-blue-400 transition-colors flex items-center justify-center gap-2 text-xs"
+          >
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg "
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+            <span class="text-white">|</span>
 
-    <div class="container mx-auto h-screen flex items-center justify-start">
-      <div class="text-right max-w-xl px-6">
-        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
-          شركة انتماء للتوظيف
-        </h1>
-        <button type="button"
-          class="bg-sky-500 text-white px-5 py-1 rounded-3xl hover:bg-blue-400 transition-colors flex items-center justify-center gap-2 text-xs">
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg " class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
-                clip-rule="evenodd" />
-            </svg>
-          </span>
-          <span class="text-white">|</span>
-
-          <span> حمل الملف التعريفي</span>
-        </button>
-      </div>
-    </div>
-
-    <div id="landingOverlay" class="absolute inset-0 h-screen bg-transparent z-50 flex items-center justify-center">
-      <div class="relative w-full max-w-5/6 ">
-        <!-- Slider Container -->
-        <div class="overflow-hidden relative  h-screen" style="position:relative;">
-          <!-- Slides -->
-          <div id="slider" class="flex h-full relative">
-
-            <div
-              class="min-w-full h-full flex items-center justify-center bg-cover bg-center transition-opacity duration-700 ease-in-out"
-              style="background-image: url('../imgs/Mask Group 33.png');">
-              <div class="container mx-auto h-screen flex items-center justify-start">
-                <div class="text-right max-w-xl px-6">
-                  <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
-                    شركة انتماء للتوظيف
-                  </h1>
-                  <button type="button"
-                    class="bg-sky-500 text-white px-5 py-1 rounded-3xl hover:bg-blue-400 transition-colors flex items-center justify-center gap-2 text-xs">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg " class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                          d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
-                          clip-rule="evenodd" />
-                      </svg>
-                    </span>
-                    <span class="text-white">|</span>
-
-                    <span> حمل الملف التعريفي</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="min-w-full h-full flex items-center justify-center bg-cover bg-center transition-opacity duration-700 ease-in-out"
-              style="background-image: url('../imgs/Mask Group 33.png');">
-              <div class="container mx-auto h-screen flex items-center justify-start">
-                <div class="text-right max-w-xl px-6">
-                  <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
-                    2 شركة انتماء للتوظيف
-                  </h1>
-                  <button type="button"
-                    class="bg-sky-500 text-white px-5 py-1 rounded-3xl hover:bg-blue-400 transition-colors flex items-center justify-center gap-2 text-xs">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg " class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                          d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
-                          clip-rule="evenodd" />
-                      </svg>
-                    </span>
-                    <span class="text-white">|</span>
-
-                    <span> حمل الملف التعريفي</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="min-w-full h-full flex items-center justify-center bg-cover bg-center transition-opacity duration-700 ease-in-out"
-              style="background-image: url('../imgs/Mask Group 33.png');">
-              <div class="container mx-auto h-screen flex items-center justify-start">
-                <div class="text-right max-w-xl px-6">
-                  <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
-                    3 شركة انتماء للتوظيف
-                  </h1>
-                  <button type="button"
-                    class="bg-sky-500 text-white px-5 py-1 rounded-3xl hover:bg-blue-400 transition-colors flex items-center justify-center gap-2 text-xs">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg " class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                          d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
-                          clip-rule="evenodd" />
-                      </svg>
-                    </span>
-                    <span class="text-white">|</span>
-
-                    <span> حمل الملف التعريفي</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-
-
-          </div>
-          <!-- Navigation Buttons -->
-          
-            <button onclick="prevSlide()"
-            class="slider-nav-btn absolute top-[60%] sm:top-1/2 left-2 transform -translate-y-1/2 text-white cursor-pointer z-50">
-            <div class="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full"
-              style="background:rgba(0,0,0,0.3);">
-              <i class="fa-solid fa-arrow-left"></i>
-            </div>
+            <span> حمل الملف التعريفي</span>
           </button>
-
-          <button onclick="nextSlide()"
-            class="slider-nav-btn absolute top-[60%] sm:top-1/2 right-2 transform -translate-y-1/2 text-white cursor-pointer z-50">
-            <div class="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full"
-              style="background:rgba(0,0,0,0.3);">
-              <i class="fa-solid fa-arrow-right"></i>
-            </div>
-          </button>
-          
-          <!-- Dots Navigation -->
-          <div class="flex justify-center mt-4 absolute bottom-12 left-1/2 space-x-2 z-50" id="sliderDots">
-            <span class="dot mx-2 w-3 h-3 bg-gray-400 rounded-full cursor-pointer" onclick="goToSlide(0)"></span>
-            <span class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer" onclick="goToSlide(1)"></span>
-            <span class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer" onclick="goToSlide(2)"></span>
-          </div>
-
-
-          <!-- Close Button -->
-          <!-- <button onclick="closeOverlay()" class="absolute top-2 right-2 text-white bg-red-500 px-2 py-1 rounded">
-      ✕
-    </button> -->
         </div>
       </div>
-    </div>
 
-    <!-- header -->
-    <div class="container">
-      <header class="fixed top-0 left-0 right-0 z-50">
-        <div class="md:w-5/6 px-2 md:px-0 mx-auto ">
+      <div
+        id="landingOverlay"
+        class="absolute inset-0 h-screen bg-transparent z-50 flex items-center justify-center"
+      >
+        <div class="relative w-full max-w-5/6">
+          <!-- Slider Container -->
+          <div
+            class="overflow-hidden relative h-screen"
+            style="position: relative;"
+          >
+            <!-- Slides -->
+            <div id="slider" class="flex h-full relative">
+              <div
+                class="min-w-full h-full flex items-center justify-center bg-cover bg-center transition-opacity duration-700 ease-in-out"
+                style="background-image: url('../imgs/Mask Group 33.png');"
+              >
+                <div
+                  class="container mx-auto h-screen flex items-center justify-start"
+                >
+                  <div class="text-right max-w-xl px-6">
+                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                      شركة انتماء للتوظيف
+                    </h1>
+                    <button
+                      type="button"
+                      class="bg-sky-500 text-white px-5 py-1 rounded-3xl hover:bg-blue-400 transition-colors flex items-center justify-center gap-2 text-xs"
+                    >
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg "
+                          class="h-5 w-5"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                      <span class="text-white">|</span>
 
-          <div class="bg-transparent mt-2 backdrop-blur-sm border-b border-sky-500 transaition duration-200 ease-in-out"
-            dir="rtl">
-            <div class="container mx-auto px-4 py-2">
-              <div class="flex justify-between items-center text-sm text-white/80">
-                <div class="flex items-center gap-2">
-                  <span>عربي</span>
-                  <span class="text-white/40">|</span>
-                  <span class="text-white/60">EN</span>
-                </div>
-
-                <div class="flex items-center gap-2" dir="rtl">
-                  <div class="flex items-center gap-2">
-                    <Mail size="{14}" />
-                    <span
-                      class="block px-4 text-gray-300 hover:text-sky-500 transition duration-200 ease-in-out transform hover:scale-105">تواصل
-                      معنا</span>
+                      <span> حمل الملف التعريفي</span>
+                    </button>
                   </div>
+                </div>
+              </div>
 
-                  <span class="text-white/40">|</span>
-                  <div class="flex items-center gap-2">
-                    <Phone size="{14}" />
-                    <span class="text-gray-300 hover:text-white transition duration-200">+966 50 123 4567</span>
+              <div
+                class="min-w-full h-full flex items-center justify-center bg-cover bg-center transition-opacity duration-700 ease-in-out"
+                style="background-image: url('../imgs/Mask Group 33.png');"
+              >
+                <div
+                  class="container mx-auto h-screen flex items-center justify-start"
+                >
+                  <div class="text-right max-w-xl px-6">
+                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                      2 شركة انتماء للتوظيف
+                    </h1>
+                    <button
+                      type="button"
+                      class="bg-sky-500 text-white px-5 py-1 rounded-3xl hover:bg-blue-400 transition-colors flex items-center justify-center gap-2 text-xs"
+                    >
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg "
+                          class="h-5 w-5"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                      <span class="text-white">|</span>
+
+                      <span> حمل الملف التعريفي</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="min-w-full h-full flex items-center justify-center bg-cover bg-center transition-opacity duration-700 ease-in-out"
+                style="background-image: url('../imgs/Mask Group 33.png');"
+              >
+                <div
+                  class="container mx-auto h-screen flex items-center justify-start"
+                >
+                  <div class="text-right max-w-xl px-6">
+                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                      3 شركة انتماء للتوظيف
+                    </h1>
+                    <button
+                      type="button"
+                      class="bg-sky-500 text-white px-5 py-1 rounded-3xl hover:bg-blue-400 transition-colors flex items-center justify-center gap-2 text-xs"
+                    >
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg "
+                          class="h-5 w-5"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                      <span class="text-white">|</span>
+
+                      <span> حمل الملف التعريفي</span>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+            <!-- Navigation Buttons -->
 
-          <nav class=" bg-transparent  text-white" dir="rtl">
+            <button
+              onclick="prevSlide()"
+              class="slider-nav-btn absolute top-[60%] sm:top-1/2 left-2 transform -translate-y-1/2 text-white cursor-pointer z-50"
+            >
+              <div
+                class="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full"
+                style="background: rgba(0, 0, 0, 0.3);"
+              >
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+            </button>
+
+            <button
+              onclick="nextSlide()"
+              class="slider-nav-btn absolute top-[60%] sm:top-1/2 right-2 transform -translate-y-1/2 text-white cursor-pointer z-50"
+            >
+              <div
+                class="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full"
+                style="background: rgba(0, 0, 0, 0.3);"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </button>
+
+            <!-- Dots Navigation -->
             <div
-              class="container mx-auto px-4 py-3 flex items-center justify-between transaition duration-200 ease-in-out">
-              <!-- Right: Logo + Links -->
-              <div class="flex items-center gap-8">
-                <!-- Logo -->
-                <img src="../imgs/Group 2.png" alt="Logo" class="h-8 w-auto" />
+              class="flex justify-center mt-4 absolute bottom-12 left-1/2 space-x-2 z-50"
+              id="sliderDots"
+            >
+              <span
+                class="dot mx-2 w-3 h-3 bg-gray-400 rounded-full cursor-pointer"
+                onclick="goToSlide(0)"
+              ></span>
+              <span
+                class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer"
+                onclick="goToSlide(1)"
+              ></span>
+              <span
+                class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer"
+                onclick="goToSlide(2)"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                <!-- Desktop Links -->
-                <div class="hidden lg:flex items-center gap-2 font-medium">
-                  <a href="#" class=" hover:text-sky-500 hover:scale-110">الرئيسية</a>
-                  <span class="text-sky-500 select-none">|</span>
-
-                  <!-- Dropdown -->
-                  <div class="relative group ">
-                    <button
-                      class="  flex items-center gap-1 px-2 py-1 hover:text-sky-500 hover:bg-blue-950  hover:scale-110">
-                      الخدمات و الاسعار
-                      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </button>
-                    <div
-                      class="absolute top-full left-[-6px] mt-1 w-64 bg-blue-950 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 text-right z-20">
-                      <a href="#" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-sky-500">مسار الوظائف
-                        القيادية التنفيذيه</a>
-                      <a href="#" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-sky-500">مسار الوظائف
-                        الاداريه الفنيه</a>
-                      <a href="#" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-sky-500">مسار الصفوف
-                        الاوليه</a>
-                    </div>
+      <!-- header -->
+      <div class="mx-20">
+        <header class="absolute top-0 left-0 right-0 z-50">
+          <div class="md:w-5/6 px-2 md:px-0 mx-auto">
+            <div
+              class="topbar rounded-t-lg mt-2 border-b border-sky-500 transaition duration-200 ease-in-out"
+              dir="rtl"
+            >
+              <div class="container mx-auto px-4 py-2">
+                <div
+                  class="flex justify-between items-center text-sm text-white/80"
+                >
+                  <div class="flex items-center gap-2">
+                    <span>عربي</span>
+                    <span class="text-white/40">|</span>
+                    <span class="text-white/60">EN</span>
                   </div>
 
-                  <span class="text-blue-400 select-none">|</span>
-                  <a href="#" class=" hover:text-sky-500 hover:scale-110">إعلان الوظائف</a>
-                  <span class="text-sky-500 select-none">|</span>
-                  <a href="#" class=" hover:text-sky-500 hover:scale-110">الباحثون عن العمل</a>
+                  <div class="flex items-center gap-2" dir="rtl">
+                    <div class="flex items-center gap-2">
+                      <Mail size="{14}" />
+                      <span
+                        class="block px-4 text-gray-300 hover:text-sky-500 transition duration-200 ease-in-out transform hover:scale-105"
+                        >تواصل معنا</span
+                      >
+                    </div>
+
+                    <span class="text-white/40">|</span>
+                    <div class="flex items-center gap-2">
+                      <Phone size="{14}" />
+                      <span
+                        class="text-gray-300 hover:text-white transition duration-200"
+                        >+966 50 123 4567</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <nav class="rounded-b-lg text-white" dir="rtl">
+              <div
+                class="container mx-auto px-4 py-3 flex items-center justify-between transaition duration-200 ease-in-out"
+              >
+                <!-- Right: Logo + Links -->
+                <div class="flex items-center gap-8">
+                  <!-- Logo -->
+                  <img
+                    src="../imgs/Group 2.png"
+                    alt="Logo"
+                    class="h-8 w-auto"
+                  />
+
+                  <!-- Desktop Links -->
+                  <div class="hidden lg:flex items-center gap-2 font-medium">
+                    <a href="#" class="hover:text-sky-500 hover:scale-110"
+                      >الرئيسية</a
+                    >
+                    <span class="text-sky-500 select-none">|</span>
+
+                    <!-- Dropdown -->
+                    <div class="relative group">
+                      <button
+                        class="flex items-center gap-1 px-2 py-1 hover:text-sky-500 hover:bg-blue-950 hover:scale-110"
+                      >
+                        الخدمات و الاسعار
+                        <svg
+                          class="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
+                      </button>
+                      <div
+                        class="absolute top-full left-[-6px] mt-1 w-64 bg-blue-950 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 text-right z-20"
+                      >
+                        <a
+                          href="#"
+                          class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-sky-500"
+                          >مسار الوظائف القيادية التنفيذيه</a
+                        >
+                        <a
+                          href="#"
+                          class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-sky-500"
+                          >مسار الوظائف الاداريه الفنيه</a
+                        >
+                        <a
+                          href="#"
+                          class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-sky-500"
+                          >مسار الصفوف الاوليه</a
+                        >
+                      </div>
+                    </div>
+
+                    <span class="text-blue-400 select-none">|</span>
+                    <a href="#" class="hover:text-sky-500 hover:scale-110"
+                      >إعلان الوظائف</a
+                    >
+                    <span class="text-sky-500 select-none">|</span>
+                    <a href="#" class="hover:text-sky-500 hover:scale-110"
+                      >الباحثون عن العمل</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Mobile/Tablet Toggle Button -->
+                <button id="menu-toggle" class="lg:hidden focus:outline-none">
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
+
+                <!-- Left: Login/Register (Desktop only) -->
+                <div class="hidden lg:flex items-center gap-2">
+                  <a
+                    href="#"
+                    class="text-white font-light hover:text-sky-500 hover:translate-x-1"
+                    >تسجيل الدخول</a
+                  >
+                  <button
+                    class="bg-sky-500 text-white text-xs px-4 py-1 rounded-full hover:scale-105"
+                  >
+                    حساب جديد
+                  </button>
                 </div>
               </div>
 
-              <!-- Mobile/Tablet Toggle Button -->
-              <button id="menu-toggle" class="lg:hidden focus:outline-none">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              </button>
-
-              <!-- Left: Login/Register (Desktop only) -->
-              <div class="hidden lg:flex items-center gap-2">
-                <a href="#" class="text-white font-light hover:text-sky-500 hover:translate-x-1 ">تسجيل الدخول</a>
-                <button class="bg-sky-500 text-white text-xs px-4 py-1 rounded-full hover:scale-105 ">
+              <!-- Mobile/Tablet Menu -->
+              <div
+                id="mobile-menu"
+                class="lg:hidden hidden px-4 pb-4 text-right space-y-3 bg-blue-800 rounded-lg"
+              >
+                <a href="#" class="block hover:text-sky-400 pb-2 pt-3"
+                  >الرئيسية</a
+                >
+                <details class="group">
+                  <summary class="cursor-pointer hover:text-sky-400 pb-2"
+                    >الخدمات الاسعار</summary
+                  >
+                  <div class="pl-4 space-y-2 text-sm text-gray-300 pb-2">
+                    <a href="#" class="block hover:text-white pb-2"
+                      >مسار الوظائف القيادية التنفيذيه</a
+                    >
+                    <a href="#" class="block hover:text-white pb-2"
+                      >مسار الوظائف الاداريه الفنيه</a
+                    >
+                    <a href="#" class="block hover:text-white pb-2"
+                      >مسار الصفوف الاوليه</a
+                    >
+                  </div>
+                </details>
+                <a href="#" class="block hover:text-sky-400 pb-2"
+                  >إعلان الوظائف</a
+                >
+                <a href="#" class="block hover:text-sky-400 pb-2"
+                  >الباحثون عن العمل</a
+                >
+                <hr class="border-sky-500" />
+                <a href="#" class="block hover:text-sky-400 pb-2"
+                  >تسجيل الدخول</a
+                >
+                <button
+                  class="w-full bg-sky-500 text-white px-4 py-1 rounded-full mb-3"
+                >
                   حساب جديد
                 </button>
               </div>
-            </div>
-
-            <!-- Mobile/Tablet Menu -->
-            <div id="mobile-menu" class="lg:hidden hidden px-4 pb-4 text-right space-y-3 bg-blue-800 rounded-lg">
-              <a href="#" class="block hover:text-sky-400 pb-2 pt-3">الرئيسية</a>
-              <details class="group">
-                <summary class="cursor-pointer hover:text-sky-400 pb-2">الخدمات الاسعار</summary>
-                <div class="pl-4 space-y-2 text-sm text-gray-300 pb-2">
-                  <a href="#" class="block hover:text-white pb-2">مسار الوظائف القيادية التنفيذيه</a>
-                  <a href="#" class="block hover:text-white pb-2">مسار الوظائف الاداريه الفنيه</a>
-                  <a href="#" class="block hover:text-white pb-2">مسار الصفوف الاوليه</a>
-                </div>
-              </details>
-              <a href="#" class="block hover:text-sky-400 pb-2">إعلان الوظائف</a>
-              <a href="#" class="block hover:text-sky-400 pb-2">الباحثون عن العمل</a>
-              <hr class="border-sky-500" />
-              <a href="#" class="block hover:text-sky-400 pb-2">تسجيل الدخول</a>
-              <button class="w-full bg-sky-500 text-white px-4 py-1 rounded-full mb-3">
-                حساب جديد
-              </button>
-            </div>
-          </nav>
-
-        </div>
-      </header>
-
-     
+            </nav>
+          </div>
+        </header>
+      </div>
 
       <!-- About Section -->
-      <section class="pt-20 mx-auto">
+      <section class="pt-20 px-5 md:px-20 mx-auto">
         <div
-          class="rounded-3xl overflow-hidden py-1 bg-gradient-to-r from-cyan-400 to-blue-900 p-4 sm:p-6 md:p-8 text-white">
-          <div class="flex flex-col lg:flex-row items-center bg-cover bg-center bg-no-repeat text-center lg:text-right">
+          class="rounded-3xl overflow-hidden py-1 bg-gradient-to-r from-cyan-400 to-blue-900 p-4 sm:p-6 md:p-8 text-white"
+        >
+          <div
+            class="flex flex-col lg:flex-row items-center bg-cover bg-center bg-no-repeat text-center lg:text-right"
+          >
             <!-- Text Column -->
             <div
-              class="w-full lg:w-3/5 px-2 py-6 lg:px-8 lg:py-4 flex flex-col justify-center items-center lg:items-start">
+              class="w-full lg:w-3/5 px-2 py-6 lg:px-8 lg:py-4 flex flex-col justify-center items-center lg:items-start"
+            >
               <div class="relative inline-block mb-8">
-                <div class="absolute bottom-0 left-0 right-3 h-1/2 bg-gradient-to-r from-transparent to-sky-500 -z-9">
-                </div>
-                <h1 class="relative text-white text-2xl  font-bold px-4">
+                <div
+                  class="absolute bottom-0 left-0 right-3 h-1/2 bg-gradient-to-r from-transparent to-sky-500 -z-9"
+                ></div>
+                <h1 class="relative text-white text-2xl font-bold px-4">
                   عن انتماء
                 </h1>
               </div>
 
-              <p class="text-white/90 leading-relaxed font-medium  sm:px-6">
+              <p class="text-white/90 leading-relaxed font-medium sm:px-6">
                 انطلقت انتماء في عام 2013 باجتماع فريق من الخبرات في مجال
                 الموارد البشرية التي تحمل الشغف في مجالها وهنا كانت الانطلاقة
               </p>
@@ -304,625 +444,953 @@
             </div>
 
             <!-- Image Column -->
-            <div class="w-full lg:w-2/5 px-8 py-6 lg:px-6 lg:py-4 flex justify-center items-center relative">
-              <img src="../imgs/Layer 2.png" alt="Kingdom Tower"
-                class="rounded-2xl shadow-lg h-[220px] sm:h-[260px] md:h-[300px] w-auto mx-auto lg:ml-32" />
+            <div
+              class="w-full lg:w-2/5 px-8 py-6 lg:px-6 lg:py-4 flex justify-center items-center relative"
+            >
+              <img
+                src="../imgs/Layer 2.png"
+                alt="Kingdom Tower"
+                class="rounded-2xl shadow-lg h-[220px] sm:h-[260px] md:h-[300px] w-auto mx-auto lg:ml-32"
+              />
 
               <!-- Decorative Elements -->
               <div
-                class="absolute top-14 right-28 w-14 sm:w-14 md:top-20 md:right-44 md:w-20 lg:top-24 lg:right-12 lg:w-16 xl:w-16">
+                class="absolute top-14 right-28 w-14 sm:w-14 md:top-20 md:right-44 md:w-20 lg:top-24 lg:right-12 lg:w-16 xl:w-16"
+              >
                 <img src="../imgs/Path 1321.png" alt="" />
               </div>
               <div
-                class="absolute bottom-2 left-20 w-20 sm:w-20 md:bottom-6 md:left-32 md:w-28 lg:top-48 lg:left-14 lg:w-28 xl:w-28">
+                class="absolute bottom-2 left-20 w-20 sm:w-20 md:bottom-6 md:left-32 md:w-28 lg:top-48 lg:left-14 lg:w-28 xl:w-28"
+              >
                 <img src="../imgs/Path 1322.png" alt="" class="w-full h-auto" />
               </div>
             </div>
           </div>
         </div>
       </section>
-    </div>
 
-    <!-- services and price -->
-    <section class="py-10 md:px-4 relative">
-      <!-- Background Side Bars -->
-      <div
-        class="absolute top-[150px] left-0 w-1/4 md:w-1/6 lg:w-1/4 bottom-0 bg-gradient-to-tr from-cyan-500 to-blue-900 -z-10 rounded-r-3xl">
-      </div>
-      <div
-        class="absolute top-[150px] right-0 w-1/4 md:w-1/6 lg:w-1/4 bottom-0 bg-gradient-to-tr from-cyan-500 to-blue-900 -z-10 rounded-l-3xl">
-      </div>
+      <!-- services and price -->
+      <section class="py-10 md:px-4 relative">
+        <!-- Background Side Bars -->
+        <div
+          class="absolute top-[150px] left-0 w-1/4 md:w-1/6 lg:w-1/4 bottom-0 bg-gradient-to-tr from-cyan-500 to-blue-900 -z-10 rounded-r-3xl"
+        ></div>
+        <div
+          class="absolute top-[150px] right-0 w-1/4 md:w-1/6 lg:w-1/4 bottom-0 bg-gradient-to-tr from-cyan-500 to-blue-900 -z-10 rounded-l-3xl"
+        ></div>
 
-      <div class="w-5/6 mx-auto">
-        <div class="container mx-auto">
-          <div class="text-center mb-12 py-5">
-            <div class="relative inline-block mb-3">
-              <div class="absolute bottom-0 left-20 right-3 h-1/2 bg-gradient-to-r from-transparent to-sky-500 -z-10">
+        <div class="w-5/6 mx-auto">
+          <div class="container mx-auto">
+            <div class="text-center mb-12 py-5">
+              <div class="relative inline-block mb-3">
+                <div
+                  class="absolute bottom-0 left-20 right-3 h-1/2 bg-gradient-to-r from-transparent to-sky-500 -z-10"
+                ></div>
+                <h1
+                  class="relative text-blue-900 text-2xl font-bold text-center px-4 py-1"
+                >
+                  الخدمات و الاسعار
+                </h1>
               </div>
-              <h1 class="relative text-blue-900 text-2xl font-bold text-center px-4 py-1">
-                الخدمات و الاسعار
+              <p class="text-gray-400">نوفر لك أكثر كفاءه وأقل تكلفة</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <!-- Card 1 -->
+              <div
+                class="rounded-3xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 py-10"
+                style="
+                  background-image: url('../imgs/Group\ 476.png');
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div class="p-2 text-center">
+                  <div
+                    class="w-16 h-16 bg-white rounded-xl mx-auto mb-4 flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-8 h-8 text-secondary"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-bold text-white mb-2">
+                    مسار الوظائف القيادية والتنفيذية
+                  </h3>
+                  <p class="text-white/80 text-sm">
+                    هذا النص هو مثال يمكن أن يستبدل في نفس المساحة
+                  </p>
+                </div>
+                <div class="py-3 text-center">
+                  <button
+                    class="bg-blue-900 text-white px-8 py-2 w-4/5 rounded-3xl hover:bg-opacity-90 transition-colors"
+                  >
+                    المزيد
+                  </button>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div
+                class="rounded-3xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 py-10"
+                style="
+                  background-image: url('../imgs/Group\ 476.png');
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div class="p-2 text-center">
+                  <div
+                    class="w-16 h-16 bg-white rounded-xl mx-auto mb-4 flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-8 h-8 text-secondary"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-bold text-white mb-2">
+                    مسار الوظائف الإداريه الفنية
+                  </h3>
+                  <p class="text-white/80 text-sm">
+                    هذا النص هو مثال يمكن أن يستبدل في نفس المساحة
+                  </p>
+                </div>
+
+                <div class="py-3 text-center">
+                  <button
+                    class="bg-blue-900 text-white px-8 py-2 w-4/5 rounded-3xl hover:bg-opacity-90 transition-colors"
+                  >
+                    المزيد
+                  </button>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div
+                class="rounded-3xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 py-10"
+                style="
+                  background-image: url('../imgs/Group\ 476.png');
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div class="p-2 text-center">
+                  <div
+                    class="w-16 h-16 bg-white rounded-xl mx-auto mb-4 flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-8 h-8 text-secondary"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-bold text-white mb-2">
+                    مسار الصفوف الأولية
+                  </h3>
+                  <p class="text-white/80 text-sm">
+                    هذا النص هو مثال يمكن أن يستبدل في نفس المساحة
+                  </p>
+                </div>
+                <div class="py-3 text-center">
+                  <button
+                    class="bg-blue-900 text-white px-8 py-2 w-4/5 rounded-3xl hover:bg-opacity-90 transition-colors"
+                  >
+                    المزيد
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- bussnis men  -->
+
+      <section class="my-30">
+        <div class="mx-auto md:w-3/4 2xl:w-8/12 w-full sm:px-10 px-4 py-16">
+          <!-- Employers Section -->
+          <div class="text-center py-5">
+            <div class="relative inline-block mb-1">
+              <div
+                class="absolute bottom-0 left-20 right-3 h-1/2 bg-gradient-to-r from-transparent to-sky-500 -z-10"
+              ></div>
+              <h1
+                class="relative text-blue-900 text-2xl font-bold text-center px-4 py-1"
+              >
+                أصحاب العمل
               </h1>
             </div>
-            <p class="text-gray-400">نوفر لك أكثر كفاءه وأقل تكلفة</p>
+            <p class="text-2xl mb-2 text-gray-500 font-bold">
+              وظف أفضل المواهب بسرعة
+            </p>
+            <p class="mb-8 text-gray-400 font-bold">
+              نسهل عملية التوظيف بالكامل من العثور على المرشحين إلى انضمام
+              الموظف إلى العمل.
+            </p>
           </div>
 
-          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <!-- Card 1 -->
-            <div
-              class="rounded-3xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 py-10"
-              style="
-                background-image: url('../imgs/Group\ 476.png');
-                background-size: cover;
-                background-position: center;
-              ">
-              <div class="p-2 text-center">
-                <div class="w-16 h-16 bg-white rounded-xl mx-auto mb-4 flex items-center justify-center">
-                  <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                  </svg>
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2">
-                  مسار الوظائف القيادية والتنفيذية
-                </h3>
-                <p class="text-white/80 text-sm">
-                  هذا النص هو مثال يمكن أن يستبدل في نفس المساحة
-                </p>
-              </div>
-              <div class="py-3 text-center">
-                <button
-                  class="bg-blue-900 text-white px-8 py-2 w-4/5 rounded-3xl hover:bg-opacity-90 transition-colors">
-                  المزيد
-                </button>
-              </div>
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-y-10 items-center justify-center relative"
+          >
+            <!-- Right Content -->
+            <div class="w-full mx-auto">
+              <ul class="space-y-6 mb-8">
+                <li class="flex items-center gap-3">
+                  <span class="bg-blue-400/20 p-1 rounded-full">
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="text-lg text-gray-500 font-bold"
+                    >وظائف تتلاءم مع السوق</span
+                  >
+                </li>
+
+                <li class="flex items-center gap-3">
+                  <span class="bg-blue-400/20 p-1 rounded-full">
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="text-lg text-gray-500 font-bold"
+                    >استقطاب الكفاءات على مدار الساعة</span
+                  >
+                </li>
+
+                <li class="flex items-center gap-3">
+                  <span class="bg-blue-400/20 p-1 rounded-full">
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="text-lg text-gray-500 font-bold"
+                    >تقييم المهارات بدقة ومنهجية</span
+                  >
+                </li>
+
+                <li class="flex items-center gap-3">
+                  <span class="bg-blue-400/20 p-1 rounded-full">
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="text-lg text-gray-500 font-bold"
+                    >ربط المرشحين مع الوظائف بخطة زر</span
+                  >
+                </li>
+              </ul>
+
+              <button
+                class="bg-sky-500 text-white px-4 py-1 rounded-full hover:bg-sky-500 transition-colors"
+              >
+                المزيد
+              </button>
             </div>
 
-            <!-- Card 2 -->
-            <div
-              class="rounded-3xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 py-10"
-              style="
-                background-image: url('../imgs/Group\ 476.png');
-                background-size: cover;
-                background-position: center;
-              ">
-              <div class="p-2 text-center">
-                <div class="w-16 h-16 bg-white rounded-xl mx-auto mb-4 flex items-center justify-center">
-                  <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                  </svg>
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2">
-                  مسار الوظائف الإداريه الفنية
-                </h3>
-                <p class="text-white/80 text-sm">
-                  هذا النص هو مثال يمكن أن يستبدل في نفس المساحة
-                </p>
-              </div>
-
-              <div class="py-3 text-center">
-                <button
-                  class="bg-blue-900 text-white px-8 py-2 w-4/5 rounded-3xl hover:bg-opacity-90 transition-colors">
-                  المزيد
-                </button>
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div
-              class="rounded-3xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 py-10"
-              style="
-                background-image: url('../imgs/Group\ 476.png');
-                background-size: cover;
-                background-position: center;
-              ">
-              <div class="p-2 text-center">
-                <div class="w-16 h-16 bg-white rounded-xl mx-auto mb-4 flex items-center justify-center">
-                  <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                  </svg>
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2">
-                  مسار الصفوف الأولية
-                </h3>
-                <p class="text-white/80 text-sm">
-                  هذا النص هو مثال يمكن أن يستبدل في نفس المساحة
-                </p>
-              </div>
-              <div class="py-3 text-center">
-                <button
-                  class="bg-blue-900 text-white px-8 py-2 w-4/5 rounded-3xl hover:bg-opacity-90 transition-colors">
-                  المزيد
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- bussnis men  -->
-
-    <section class="my-30">
-      <div class="md:w-3/4 mx-auto sm:px-10 px-4 py-16">
-        <!-- Employers Section -->
-        <div class="text-center py-5">
-          <div class="relative inline-block mb-1">
-            <div class="absolute bottom-0 left-20 right-3 h-1/2 bg-gradient-to-r from-transparent to-sky-500 -z-10">
-            </div>
-            <h1 class="relative text-blue-900 text-2xl font-bold text-center px-4 py-1">
-              أصحاب العمل
-            </h1>
-          </div>
-          <p class="text-2xl mb-2 text-gray-500 font-bold">
-            وظف أفضل المواهب بسرعة
-          </p>
-          <p class="mb-8 text-gray-400 font-bold">
-            نسهل عملية التوظيف بالكامل من العثور على المرشحين إلى انضمام الموظف
-            إلى العمل.
-          </p>
-        </div>
-        <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-          <!-- Right Content -->
-          <div class="w-full md:w-1/2 ">
-            <ul class="space-y-6 mb-8 ">
-
-              <li class="flex items-center gap-3">
-                <span class="bg-blue-400/20 p-1 rounded-full">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </span>
-                <span class="text-lg text-gray-500 font-bold">وظائف تتلاءم مع السوق</span>
-              </li>
-
-              <li class="flex items-center gap-3">
-                <span class="bg-blue-400/20 p-1 rounded-full">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </span>
-                <span class="text-lg text-gray-500 font-bold">استقطاب الكفاءات على مدار الساعة</span>
-              </li>
-
-              <li class="flex items-center gap-3">
-                <span class="bg-blue-400/20 p-1 rounded-full">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </span>
-                <span class="text-lg text-gray-500 font-bold">تقييم المهارات بدقة ومنهجية</span>
-              </li>
-
-              <li class="flex items-center gap-3">
-                <span class="bg-blue-400/20 p-1 rounded-full">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </span>
-                <span class="text-lg text-gray-500 font-bold">ربط المرشحين مع الوظائف بخطة زر</span>
-              </li>
-
-            </ul>
-
-            <button class="bg-sky-500 text-white px-4 py-1 rounded-full hover:bg-sky-500 transition-colors">
-              المزيد
-            </button>
-          </div>
-
-          <!-- Left Content -->
-          <div class="w-full md:w-1/2">
-            <div class="relative">
-              <div class="space-y-4 ">
+            <!-- Left Content -->
+            <div class="w-full mx-auto relative">
+              <div class="space-y-4">
                 <!--  Card 1 -->
-                <div class="bg-white rounded-xl p-4 shadow-lg w-full max-w-sm relative py-10 md:py-3">
-                  <div class="flex items-center gap-4">
-                    <div class="bg-gray-50 w-16 h-16 rounded-lg overflow-hidden">
-                      <img src="../imgs/DeWatermark.ai_1738537930081.png" alt="candidate"
-                        class="w-full h-full object-cover" />
+
+                <div
+                  class="bg-white rounded-xl p-4 shadow-lg w-full max-w-sm relative md:py-3"
+                >
+                  <div class="grid grid-cols-4 items-center gap-4 relative">
+                    <div
+                      class="bg-gray-50 w-16 h-16 rounded-lg overflow-hidden"
+                    >
+                      <img
+                        src="../imgs/DeWatermark.ai_1738537930081.png"
+                        alt="candidate"
+                        class="w-full h-full object-cover"
+                      />
                     </div>
-                    <div>
+                    <div class="col-span-2">
                       <h3 class="font-bold text-gray-400">محمد</h3>
-                      <p class="text-xs text-gray-400">خبرة أكثر من 5 سنوات</p>
+                      <p class="text-xs text-gray-400">
+                        خبرة أكثر من 5 سنوات
+                      </p>
                       <p class="text-xs text-gray-400">
                         الراتب المتوقع: 5000-7000 ريال سعودي
                       </p>
                     </div>
-                    <div class="absolute left-3 top-5 text-sky-600  bg-[#D4FFCE] py-1 rounded-2xl px-3">
-                      <p class="text-xs font-normal">ناشط منذ 15 دقيقة</p>
-                    </div>
-                    <div class="absolute bottom-4 left-8 md:bottom-2 transform -translate-x-1/2">
-                      <button class="bg-sky-400 text-white px-2 py-1 rounded-full text-xs ml-4 hover:bg-opacity-90">
-                        وظف الآن
-                      </button>
+                    <div>
+                      <div
+                        class="text-sky-600 mb-8 bg-[#D4FFCE] py-1 rounded-2xl px-3 absolute left-0 top-0"
+                      >
+                        <p class="text-xs font-normal">ناشط منذ 15 دقيقة</p>
+                      </div>
+                      <div class="absolute left-0 bottom-0">
+                        <button
+                          class="bg-sky-400 text-white px-2 py-1 rounded-full text-xs hover:bg-opacity-90"
+                        >
+                          وظف الآن
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 <!--  Card 2 -->
-                <div class="bg-white rounded-xl p-4 shadow-lg mt-4 w-full max-w-sm relative sm:mr-24">
-                  <div class="flex items-center gap-4 py-6 md:py-0">
-                    <div class="bg-gray-50 w-16 h-16 rounded-lg overflow-hidden ">
-                      <img src="../imgs/DeWatermark.ai_1738538587595.png" alt="candidate"
-                        class="w-full h-full object-cover" />
+                <div
+                  class="bg-white rounded-xl p-4 shadow-lg mt-4 w-full max-w-sm sm:mr-24"
+                >
+                  <div class="grid grid-cols-4 items-center gap-4 relative">
+                    <div
+                      class="bg-gray-50 w-16 h-16 rounded-lg overflow-hidden"
+                    >
+                      <img
+                        src="../imgs/DeWatermark.ai_1738538587595.png"
+                        alt="candidate"
+                        class="w-full h-full object-cover"
+                      />
                     </div>
-                    <div>
+
+                    <div class="col-span-2">
                       <h3 class="font-bold text-gray-400">عفراء</h3>
-                      <p class="text-xs text-gray-400">خبرة في مجال التسويق</p>
+                      <p class="text-xs text-gray-400">
+                        خبرة في مجال التسويق
+                      </p>
                       <p class="text-xs text-gray-400">
                         الراتب المتوقع: 5000-7000 ريال سعودي
                       </p>
                     </div>
-                    <div class="absolute left-3 top-5 text-sky-500 bg-[#D4FFCE] py-1 rounded-2xl px-3">
-                      <p class="text-xs font-normal ">ناشط منذ 15 دقيقة</p>
+
+                    <div
+                      class="absolute left-0 top-0 text-sky-500 bg-[#D4FFCE] py-1 rounded-2xl px-3"
+                    >
+                      <p class="text-xs font-normal">ناشط منذ 15 دقيقة</p>
                     </div>
-                    <div class="absolute bottom-4 left-8 md:bottom-2 transform -translate-x-1/2">
-                      <button class="bg-sky-400 text-white px-2 py-1 rounded-full text-xs ml-4 hover:bg-opacity-90">
+                    <div class="absolute bottom-0 left-0">
+                      <button
+                        class="bg-sky-400 text-white px-2 py-1 rounded-full text-xs hover:bg-opacity-90"
+                      >
                         وظف الآن
                       </button>
                     </div>
                   </div>
                 </div>
+
+                <div>
+                  <div
+                    class="absolute left-0 bg-[#D4FFCE] text-sky-400 py-1 rounded-full px-5"
+                  >
+                    <p class="text-lg font-normal">20 مرشح</p>
+                  </div>
+
+                  <!--  Button -->
+
+                  <button
+                    class="bg-sky-400 text-white px-8 py-2 rounded-full hover:bg-opacity-80 absolute transition-all"
+                  >
+                    وظف الآن
+                  </button>
+                </div>
               </div>
 
-              <!-- Stats -->
-              <div class="absolute left-0 md:-left-10 -top-10 text-white bg-[#0AB9C4] py-2 rounded-2xl px-5">
+              <!-- Status -->
+              <div
+                class="hidden md:block absolute left-0 -top-10 text-white bg-[#0AB9C4] py-1 rounded-2xl px-5"
+              >
                 <p class="text-sm font-light">ناشط منذ 15 دقيقة</p>
               </div>
-              <div
-                class="absolute left-0 -bottom-14 md:-left-14 md:-bottom-16 bg-[#D4FFCE] text-sky-400 py-1 rounded-full px-5">
-                <p class="text-lg font-normal ">20 مرشح</p>
-              </div>
 
-              <!--  Button -->
-              <div class="absolute -bottom-14  md:-bottom-8 -right-10 md:-right-24 transform -translate-x-1/2">
-                <button class="bg-sky-400 text-white px-8 py-2 rounded-full hover:bg-opacity-90">
-                  وظف الآن
-                </button>
-              </div>
-              <!-- left arrow -->
-              <div class="absolute bottom-5 -right-20 transform -translate-x-1/2 hidden sm:block">
+              <!-- Right arrow -->
+              <div class="absolute bottom-5 transform hidden sm:block">
                 <img src="../imgs/Path 1321.png" alt="" class="w-2/4 h-auto" />
               </div>
+            </div>
 
-              <!-- right arrow -->
-              <div
-                class="hidden sm:block absolute -left-52 top-5 py-2 rounded-2xl px-5 md:-left-48 md:top-4 md:py-1 md:px-3 sm:-left-10 sm:top-3 sm:py-1 sm:px-2">
-                <img src="../imgs/Path 1322.png" alt="" class="w-1/3 h-auto md:w-3/5 sm:w-1/2" />
-              </div>
+            <!-- left arrow -->
+            <div class="hidden lg:block absolute left-0 top-1/4">
+              <img src="../imgs/Path 1322.png" alt="" class="w-1/2 mr-auto" />
             </div>
           </div>
         </div>
 
         <!--  Action Card -->
-        <div class="w-full mx-auto bg-blue-900 mt-28 rounded-3xl p-5 mb-10">
-          <h3 class="text-center text-white font-bold text-2xl pt-4">
-            نساعدك في العثور علي الموظف المثالي
-          </h3>
+      </section>
 
-          <div class="flex justify-center">
-            <button type="submit"
-              class="bg-white text-blue-900 px-8 py-3 rounded-3xl font-bold transition-colors mt-5 text-sm">
-              طلب اعلان عن وظيفه
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
+      <div
+        class="md:w-3/4 mx-2 md:mx-20 bg-blue-900 mt-28 rounded-3xl p-5 mb-10"
+      >
+        <h3 class="text-center text-white font-bold text-2xl pt-4">
+          نساعدك في العثور علي الموظف المثالي
+        </h3>
 
-    <!-- search for job  -->
-    <div class="relative bg-no-repeat bg-cover bg-center py-20 container"
-      style="background-image: url('../imgs/Group\ 478.png');">
-      <div class="lg:w-3/4 mx-auto flex flex-col lg:flex-row items-center justify-between gap-10">
-        <!-- Left Side: Text Content -->
-        <div class="md:w-2/3 mx-auto lg:w-1/2 text-white relative text-right">
-          <div class="relative md:inline-block  mb-3 px-8 md:px-9 ">
-            <div
-              class="absolute bottom-0 left-0 right-7 md:right-6 h-1/2 bg-gradient-to-r from-transparent to-sky-500 -z-1">
-            </div>
-            <h1 class=" relative text-white text-2xl md:text-3xl lg:text-2xl font-bold text-center">
-              الباحثون عن عمل
-            </h1>
-          </div>
-
-          <p class="mb-6 px-8 md:px-9 text-lg md:text-xl lg:text-base text-center md:text-right">
-            إبدأ رحلتك
-          </p>
-
-          <div class="px-8 md:px-9 lg:px-8 text-right">
-            <ul class="space-y-3 mb-10">
-              <li class="flex items-center gap-3 justify-start lg:justify-start">
-                <span class="bg-blue-400/20 p-2 rounded-full">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                </span>
-                <span class="text-xl md:text-2xl lg:text-lg font-bold">صفر رسوم على الموظف</span>
-              </li>
-              <li class="flex items-center gap-3 justify-start lg:justify-start">
-                <span class="bg-blue-400/20 p-2 rounded-full">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                </span>
-                <span class="text-xl md:text-2xl lg:text-lg font-bold">وظيفة بالقرب منك</span>
-              </li>
-              <li class="flex items-center gap-3 justify-start lg:justify-start">
-                <span class="bg-blue-400/20 p-2 rounded-full">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                </span>
-                <span class="text-xl md:text-2xl lg:text-lg font-bold">خيارات تعاقد متعددة</span>
-              </li>
-              <li class="flex items-center gap-3 justify-start lg:justify-start">
-                <span class="bg-blue-400/20 p-2 rounded-full">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                </span>
-                <span class="text-xl md:text-2xl lg:text-lg font-bold">عروض العمل تصل إليك</span>
-              </li>
-            </ul>
-
-            <button class="bg-sky-500 text-white px-6 py-1 mb-5 rounded-full hover:bg-sky-600 transition-colors">
-              المزيد
-            </button>
-          </div>
-        </div>
-
-        <!-- Right Side: Image -->
-        <div class="relative max-w-md mx-auto flex justify-center">
-          <!-- Main Image -->
-          <img src="../imgs/freepik__enhance__95990.png" alt="Job Seekers Image"
-            class="w-5/6 h-auto rounded-lg shadow-lg" />
-
-          <!-- Smaller Overlay Image, centered -->
-          <img src="../imgs/Group 467.png" alt="Overlay"
-            class="absolute top-1/2 left-1/2 w-full h-auto rounded-lg object-contain shadow-lg transform -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
-        </div>
-      </div>
-
-      <!-- Action Card (kept absolute as original) -->
-      <div class="w-3/4 mx-auto absolute left-1/2 -translate-x-1/2 bottom-[-20%]">
-        <div class="mt-12 rounded-3xl p-8 text-center bg-cover bg-center"
-          style="background-image: url('../imgs/Group 466.png');">
-          <h3 class=" text-xl md:text-2xl font-bold text-white mb-6">
-            انضم لقائمة المرشحين وزد فرصة عرض بياناتك على اصحاب العمل
-          </h3>
+        <div class="flex justify-center">
           <button
-            class="bg-white text-blue-800 px-8 py-2 rounded-full hover:bg-blue-50 transition-colors text-lg font-medium">
-            تقدم هنا
+            type="submit"
+            class="bg-white text-blue-900 px-8 py-3 rounded-3xl font-bold transition-colors mt-5 text-sm"
+          >
+            طلب اعلان عن وظيفه
           </button>
         </div>
       </div>
-    </div>
 
-    <!-- trust company and contact  -->
-    <section class="relative pt-32 overflow-hidden">
-      <!-- Background image  -->
-      <div class="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat"
-        style="background-image: url('../imgs/Mask Group 37.png');"></div>
-      <div class="text-center">
-        <div class="relative inline-block mb-3 mt-24">
-          <div class="absolute bottom-0 left-20 right-3 h-1/2 bg-gradient-to-r from-transparent to-sky-500 -z-10"></div>
-          <h1 class="relative text-blue-900 text-2xl font-bold text-center px-4 py-1">
-            شركات تثق في انتماء
-          </h1>
-        </div>
-      </div>
-
-      <p class="text-gray-400 text-center pt-3">
-        أكثر من 100+ شركة صغيرة وكبيرة
-      </p>
-
-      <div class="container pt-8">
-        <div class="w-5/6 mx-auto">
-          <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-6 gap-5">
-            <!-- Row 1 - 6 items -->
-            <div class="p-4 flex items-center justify-center">
-              <img src="../imgs/Group 468.png" alt="" class="max-w-full max-h-20 object-contain" />
-            </div>
-            <div class="p-4 flex items-center justify-center">
-              <img src="../imgs/Group 369.png" alt="" class="max-w-full max-h-20 object-contain" />
-            </div>
-            <div class="p-4 flex items-center justify-center">
-              <img src="../imgs/Group 342.png" alt="" class="max-w-full max-h-20 object-contain" />
-            </div>
-            <div class="p-4 flex items-center justify-center">
-              <img src="../imgs/Group 369.png" alt="" class="max-w-full max-h-20 object-contain" />
-            </div>
-            <div class="p-4 flex items-center justify-center">
-              <img src="../imgs/Group 389.png" alt="" class="max-w-full max-h-20 object-contain" />
-            </div>
-            <div class="p-4 flex items-center justify-center">
-              <img src="../imgs/Group 395.png" alt="" class="max-w-full max-h-20 object-contain" />
-            </div>
-          </div>
-          <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-5 gap-5">
-            <div class="p-4 flex items-center justify-center">
-              <img src="../imgs/group 470.png" alt="" class="max-w-full max-h-20 object-contain" />
-            </div>
-            <div class="p-4 flex items-center justify-center">
-              <img src="../imgs/group 345.png" alt="" class="max-w-full max-h-20 object-contain" />
-            </div>
-            <div class="p-4 flex items-center justify-center">
-              <img src="../imgs/group 367.png" alt="" class="max-w-full max-h-20 object-contain" />
-            </div>
-            <div class="p-4 flex items-center justify-center">
-              <img src="../imgs/Group 399.png" alt="" class="max-w-full max-h-20 object-contain" />
-            </div>
-            <div class="p-4 flex items-center justify-center">
-              <img src="../imgs/Group 404.png" alt="" class="max-w-full max-h-20 object-contain" />
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-5 gap-5">
-            <div class="p-4 flex items-center justify-center">
-              <img src="../imgs/group 417.png" alt="" class="max-w-full max-h-20 object-contain" />
-            </div>
-            <div class="p-4 flex items-center justify-center">
-              <img src="../imgs/group 411.png" alt="" class="max-w-full max-h-20 object-contain" />
-            </div>
-            <div class="p-4 flex items-center justify-center">
-              <img src="../imgs/group 382.png" alt="" class="max-w-full max-h-20 object-contain" />
-            </div>
-            <div class="p-4 flex items-center justify-center">
-              <img src="../imgs/group 380.png" alt="" class="max-w-full max-h-20 object-contain" />
-            </div>
-            <div class="p-4 flex items-center justify-center">
-              <img src="../imgs/group 471.png" alt="" class="max-w-full max-h-20 object-contain" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- contact us  -->
-      <div class="relative w-11/12 lg:w-3/4 mx-auto bg-gray-100 p-4 rounded-xl">
-        <div class="relative w-fit mx-auto mb-2">
-          <div class="absolute left-4 right-5 bottom-0 top-7 h-3 bg-gradient-to-r from-transparent to-sky-500 z-0">
-          </div>
-          <h3 class="relative text-blue-800 text-lg font-bold text-center px-6 py-3 z-10">
-            تواصل معنا
-          </h3>
-        </div>
-
-        <p class="text-center text-gray-400 mb-6">ادخل البيانات</p>
-
-        <div class="w-full max-w-3xl mx-auto">
-          <form class="space-y-4">
-            <!-- Select fields -->
-            <div class="flex flex-col md:flex-row gap-4">
-              <select
-                class="w-full md:w-1/2 px-4 py-3 rounded-3xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-500">
-                <option value="" disabled selected> من أنا ؟</option>
-                <option value="شركة 1"> صاحب عمل</option>
-                <option value="شركة 2"> باحث عن عمل</option>
-              </select>
-
-              <select
-                class="w-full md:w-1/2 px-4 py-3 rounded-3xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-500">
-                <option value="" disabled selected>نوع الطلب</option>
-                <option value="job">طلب توظيف</option>
-                <option value="quote">طلب تسعير</option>
-              </select>
+      <!-- search for job  -->
+      <div
+        class="relative bg-no-repeat bg-cover bg-center py-20"
+        style="background-image: url('../imgs/Group\ 478.png');"
+      >
+        <div
+          class="lg:w-3/4 mx-auto flex flex-col lg:flex-row items-center justify-between gap-10"
+        >
+          <!-- Left Side: Text Content -->
+          <div class="md:w-2/3 mx-auto lg:w-1/2 text-white relative text-right">
+            <div class="relative md:inline-block mb-3 px-8 md:px-9">
+              <div
+                class="absolute bottom-0 left-0 right-7 md:right-6 h-1/2 bg-gradient-to-r from-transparent to-sky-500 -z-1"
+              ></div>
+              <h1
+                class="relative text-white text-2xl md:text-3xl lg:text-2xl font-bold text-center"
+              >
+                الباحثون عن عمل
+              </h1>
             </div>
 
-            <!-- Inputs -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <input type="text" placeholder="الاسم"
-                class="w-full px-4 py-3 rounded-3xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400" />
-              <input type="email" placeholder="البريد الإلكتروني"
-                class="w-full px-4 py-3 rounded-3xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400" />
-              <input type="text" placeholder="رقم الجوال"
-                class="w-full px-4 py-3 rounded-3xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400" />
-            </div>
+            <p
+              class="mb-6 px-8 md:px-9 text-lg md:text-xl lg:text-base text-center md:text-right"
+            >
+              إبدأ رحلتك
+            </p>
 
-            <!-- Button -->
-            <div class="flex justify-center">
-              <button type="submit"
-                class="bg-sky-500 text-white px-5 py-2 rounded-3xl hover:bg-sky-600 transition-colors text-xs">
-                ارسال
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <footer class="rounded-t-3xl mt-14 bg-cover bg-center bg-no-repeat"
-      style="background-image: url('../imgs/Group\ 478.png');">
-      <div class="container mx-auto px-4 sm:px-6 md:px-8 py-12">
-        <div class="w-full md:w-5/6 mx-auto">
-          <!-- Row 1: Social Links -->
-          <div class="flex flex-col md:flex-row md:justify-end items-center gap-4 mb-8 text-center md:text-right">
-            <h3 class="text-white font-bold text-lg mb-0">تابعونا على</h3>
-            <div class="flex justify-center md:justify-end gap-2">
-              <div class="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full">
-                <a href="#" class="bg-transparent text-white p-2">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-              </div>
-              <div class="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full">
-                <a href="#" class="bg-transparent text-white p-2">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </div>
-              <div class="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full">
-                <a href="#" class="bg-transparent text-white p-2">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-              </div>
-              <div class="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full">
-                <a href="#" class="bg-transparent text-white p-2">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Row 2: Links + Contact Info -->
-          <div class="flex flex-col md:flex-row justify-between gap-8 border-b border-white pb-8">
-            <!-- Quick Links -->
-            <div class="w-full md:w-3/4 text-center md:text-right">
-              <ul class="space-y-2">
-                <li>
-                  <a href="#"
-                    class="text-gray-300 hover:text-white transition-transform duration-300 transform hover:scale-110">الرئيسية</a>
+            <div class="px-8 md:px-9 lg:px-8 text-right">
+              <ul class="space-y-3 mb-10">
+                <li
+                  class="flex items-center gap-3 justify-start lg:justify-start"
+                >
+                  <span class="bg-blue-400/20 p-2 rounded-full">
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </span>
+                  <span class="text-xl md:text-2xl lg:text-lg font-bold"
+                    >صفر رسوم على الموظف</span
+                  >
                 </li>
-                <li>
-                  <a href="#"
-                    class="text-gray-300 hover:text-white transition-transform duration-300 transform hover:scale-110">الخدمات
-                    والأسعار</a>
+                <li
+                  class="flex items-center gap-3 justify-start lg:justify-start"
+                >
+                  <span class="bg-blue-400/20 p-2 rounded-full">
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </span>
+                  <span class="text-xl md:text-2xl lg:text-lg font-bold"
+                    >وظيفة بالقرب منك</span
+                  >
                 </li>
-                <li>
-                  <a href="#"
-                    class="text-gray-300 hover:text-white transition-transform duration-300 transform hover:scale-110">إعلان
-                    الوظائف</a>
+                <li
+                  class="flex items-center gap-3 justify-start lg:justify-start"
+                >
+                  <span class="bg-blue-400/20 p-2 rounded-full">
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </span>
+                  <span class="text-xl md:text-2xl lg:text-lg font-bold"
+                    >خيارات تعاقد متعددة</span
+                  >
                 </li>
-                <li>
-                  <a href="#"
-                    class="text-gray-300 hover:text-white transition-transform duration-300 transform hover:scale-110">الباحثون
-                    عن العمل</a>
+                <li
+                  class="flex items-center gap-3 justify-start lg:justify-start"
+                >
+                  <span class="bg-blue-400/20 p-2 rounded-full">
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </span>
+                  <span class="text-xl md:text-2xl lg:text-lg font-bold"
+                    >عروض العمل تصل إليك</span
+                  >
                 </li>
               </ul>
-            </div>
 
-            <!-- Contact Info -->
-            <div class="w-full md:w-3/4 space-y-4 text-center md:text-left">
-              <div class="flex px-2 sm:flex-row items-center justify-center md:justify-end gap-2 text-white">
-                <span dir="ltr">+966 500 432 555</span>
-                <i class="fa-solid fa-phone"></i>
+              <button
+                class="bg-sky-500 text-white px-6 py-1 mb-5 rounded-full hover:bg-sky-600 transition-colors"
+              >
+                المزيد
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Side: Image -->
+          <div class="relative max-w-md mx-auto flex justify-center">
+            <!-- Main Image -->
+            <img
+              src="../imgs/freepik__enhance__95990.png"
+              alt="Job Seekers Image"
+              class="w-5/6 h-auto rounded-lg shadow-lg"
+            />
+
+            <!-- Smaller Overlay Image, centered -->
+            <img
+              src="../imgs/Group 467.png"
+              alt="Overlay"
+              class="absolute top-1/2 left-1/2 w-full h-auto rounded-lg object-contain shadow-lg transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            />
+          </div>
+        </div>
+
+        <!-- Action Card (kept absolute as original) -->
+        <div
+          class="w-3/4 mx-auto absolute left-1/2 -translate-x-1/2 bottom-[-20%]"
+        >
+          <div
+            class="mt-12 rounded-3xl p-8 text-center bg-cover bg-center"
+            style="background-image: url('../imgs/Group 466.png');"
+          >
+            <h3 class="text-xl md:text-2xl font-bold text-white mb-6">
+              انضم لقائمة المرشحين وزد فرصة عرض بياناتك على اصحاب العمل
+            </h3>
+            <button
+              class="bg-white text-blue-800 px-8 py-2 rounded-full hover:bg-blue-50 transition-colors text-lg font-medium"
+            >
+              تقدم هنا
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- trust company and contact  -->
+      <section class="relative pt-32 overflow-hidden">
+        <!-- Background image  -->
+        <div
+          class="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat"
+          style="background-image: url('../imgs/Mask Group 37.png');"
+        ></div>
+        <div class="text-center">
+          <div class="relative inline-block mb-3 mt-24">
+            <div
+              class="absolute bottom-0 left-20 right-3 h-1/2 bg-gradient-to-r from-transparent to-sky-500 -z-10"
+            ></div>
+            <h1
+              class="relative text-blue-900 text-2xl font-bold text-center px-4 py-1"
+            >
+              شركات تثق في انتماء
+            </h1>
+          </div>
+        </div>
+
+        <p class="text-gray-400 text-center pt-3">
+          أكثر من 100+ شركة صغيرة وكبيرة
+        </p>
+
+        <div class="pt-8">
+          <div class="w-5/6 mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-5 mb-5">
+              <!-- Row 1 - 6 items -->
+              <div class="p-4 flex items-center justify-center">
+                <img
+                  src="../imgs/Group 468.png"
+                  alt=""
+                  class="max-w-full max-h-20 object-contain"
+                />
               </div>
-              <div class="flex px-2 sm:flex-row items-center justify-center md:justify-end gap-2 text-white">
-                <span>E-mail: HR@1ar.sa</span>
-                <i class="fa-regular fa-envelope"></i>
+              <div class="p-4 flex items-center justify-center">
+                <img
+                  src="../imgs/Group 369.png"
+                  alt=""
+                  class="max-w-full max-h-20 object-contain"
+                />
               </div>
-              <div class="flex px-2 sm:flex-row items-start justify-center md:justify-end gap-2 text-white">
-                <div class="text-center sm:text-left">
-                  <span>Al Thumamh Rd., Al Rabea</span><br />
-                  <span>Riyadh, Saudi Arabia</span>
-                </div>
-                <i class="fa-solid fa-location-dot md:mb-4"></i>
+              <div class="p-4 flex items-center justify-center">
+                <img
+                  src="../imgs/Group 342.png"
+                  alt=""
+                  class="max-w-full max-h-20 object-contain"
+                />
+              </div>
+              <div class="p-4 flex items-center justify-center">
+                <img
+                  src="../imgs/Group 369.png"
+                  alt=""
+                  class="max-w-full max-h-20 object-contain"
+                />
+              </div>
+              <div class="p-4 flex items-center justify-center">
+                <img
+                  src="../imgs/Group 389.png"
+                  alt=""
+                  class="max-w-full max-h-20 object-contain"
+                />
+              </div>
+              <div class="p-4 flex items-center justify-center">
+                <img
+                  src="../imgs/Group 395.png"
+                  alt=""
+                  class="max-w-full max-h-20 object-contain"
+                />
+              </div>
+
+              <div class="p-4 flex items-center justify-center">
+                <img
+                  src="../imgs/group 470.png"
+                  alt=""
+                  class="max-w-full max-h-20 object-contain"
+                />
+              </div>
+
+              <div class="p-4 flex items-center justify-center">
+                <img
+                  src="../imgs/group 345.png"
+                  alt=""
+                  class="max-w-full max-h-20 object-contain"
+                />
+              </div>
+
+              <div class="p-4 flex items-center justify-center">
+                <img
+                  src="../imgs/group 367.png"
+                  alt=""
+                  class="max-w-full max-h-20 object-contain"
+                />
+              </div>
+
+              <div class="p-4 flex items-center justify-center">
+                <img
+                  src="../imgs/Group 399.png"
+                  alt=""
+                  class="max-w-full max-h-20 object-contain"
+                />
+              </div>
+
+              <div class="p-4 flex items-center justify-center">
+                <img
+                  src="../imgs/Group 404.png"
+                  alt=""
+                  class="max-w-full max-h-20 object-contain"
+                />
+              </div>
+
+              <div class="p-4 flex items-center justify-center">
+                <img
+                  src="../imgs/group 417.png"
+                  alt=""
+                  class="max-w-full max-h-20 object-contain"
+                />
+              </div>
+              <div class="p-4 flex items-center justify-center">
+                <img
+                  src="../imgs/group 411.png"
+                  alt=""
+                  class="max-w-full max-h-20 object-contain"
+                />
+              </div>
+              <div class="p-4 flex items-center justify-center">
+                <img
+                  src="../imgs/group 382.png"
+                  alt=""
+                  class="max-w-full max-h-20 object-contain"
+                />
+              </div>
+              <div class="p-4 flex items-center justify-center">
+                <img
+                  src="../imgs/group 380.png"
+                  alt=""
+                  class="max-w-full max-h-20 object-contain"
+                />
+              </div>
+              <div class="p-4 flex items-center justify-center">
+                <img
+                  src="../imgs/group 471.png"
+                  alt=""
+                  class="max-w-full max-h-20 object-contain"
+                />
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
 
-    <!-- Bottom Footer -->
+        <!-- contact us  -->
+        <div
+          class="relative w-11/12 lg:w-3/4 mx-auto bg-gray-100 p-4 rounded-xl mb-10"
+        >
+          <div class="relative w-fit mx-auto mb-2">
+            <div
+              class="absolute left-4 right-5 bottom-0 top-7 h-3 bg-gradient-to-r from-transparent to-sky-500 z-0"
+            ></div>
+            <h3
+              class="relative text-blue-800 text-lg font-bold text-center px-6 py-3 z-10"
+            >
+              تواصل معنا
+            </h3>
+          </div>
 
-    <div class="container">
-      <div class="w-5/6 mx-auto">
-        <div class="flex justify-between items-center p-3">
-          <img src="../imgs/Group 472.png" alt="Intima Logo" class="h-8" />
-          <p class="text-gray-400 text-sm">
-            © 2024 جميع الحقوق محفوظة لشركة انتماء
-          </p>
+          <p class="text-center text-gray-400 mb-6">ادخل البيانات</p>
+
+          <div class="w-full max-w-3xl mx-auto">
+            <form class="space-y-4">
+              <!-- Select fields -->
+              <div class="flex flex-col md:flex-row gap-4">
+                <select
+                  class="w-full md:w-1/2 px-4 py-3 rounded-3xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-500"
+                >
+                  <option value="" disabled selected> من أنا ؟</option>
+                  <option value="شركة 1"> صاحب عمل</option>
+                  <option value="شركة 2"> باحث عن عمل</option>
+                </select>
+
+                <select
+                  class="w-full md:w-1/2 px-4 py-3 rounded-3xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-500"
+                >
+                  <option value="" disabled selected>نوع الطلب</option>
+                  <option value="job">طلب توظيف</option>
+                  <option value="quote">طلب استشارة</option>
+                </select>
+              </div>
+
+              <!-- Inputs -->
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <input
+                  type="text"
+                  placeholder="الاسم"
+                  class="w-full px-4 py-3 rounded-3xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                />
+                <input
+                  type="email"
+                  placeholder="البريد الإلكتروني"
+                  class="w-full px-4 py-3 rounded-3xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                />
+                <input
+                  type="text"
+                  placeholder="رقم الجوال"
+                  class="w-full px-4 py-3 rounded-3xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                />
+              </div>
+
+              <!-- Button -->
+              <div class="flex justify-center">
+                <button
+                  type="submit"
+                  class="bg-sky-500 text-white px-5 py-2 rounded-3xl hover:bg-sky-600 transition-colors text-xs"
+                >
+                  ارسال
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer
+        class="rounded-t-3xl  bg-cover bg-center bg-no-repeat"
+        style="background-image: url('../imgs/Group\ 478.png');"
+      >
+        <div class="container mx-auto px-4 sm:px-6 md:px-8 py-12">
+          <div class="w-full md:w-5/6 mx-auto">
+            <!-- Row 1: Social Links -->
+            <div
+              class="flex flex-col md:flex-row md:justify-end items-center gap-4 mb-8 text-center md:text-right"
+            >
+              <h3 class="text-white font-bold text-lg mb-0">تابعونا على</h3>
+              <div class="flex justify-center md:justify-end gap-2">
+                <div
+                  class="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full"
+                >
+                  <a href="#" class="bg-transparent text-white p-2">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </div>
+                <div
+                  class="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full"
+                >
+                  <a href="#" class="bg-transparent text-white p-2">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+                <div
+                  class="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full"
+                >
+                  <a href="#" class="bg-transparent text-white p-2">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </div>
+                <div
+                  class="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full"
+                >
+                  <a href="#" class="bg-transparent text-white p-2">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 2: Links + Contact Info -->
+            <div
+              class="flex flex-col md:flex-row justify-between gap-8 border-b border-white pb-8"
+            >
+              <!-- Quick Links -->
+              <div class="w-full md:w-3/4 text-center md:text-right">
+                <ul class="space-y-2">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-300 hover:text-white transition-transform duration-300 transform hover:scale-110"
+                      >الرئيسية</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-300 hover:text-white transition-transform duration-300 transform hover:scale-110"
+                      >الخدمات والأسعار</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-300 hover:text-white transition-transform duration-300 transform hover:scale-110"
+                      >إعلان الوظائف</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-300 hover:text-white transition-transform duration-300 transform hover:scale-110"
+                      >الباحثون عن العمل</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Contact Info -->
+              <div class="w-full md:w-3/4 space-y-4 text-center md:text-left">
+                <div
+                  class="flex px-2 sm:flex-row items-center justify-center md:justify-end gap-2 text-white"
+                >
+                  <span dir="ltr">+966 500 432 555</span>
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div
+                  class="flex px-2 sm:flex-row items-center justify-center md:justify-end gap-2 text-white"
+                >
+                  <span>E-mail: HR@1ar.sa</span>
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div
+                  class="flex px-2 sm:flex-row items-start justify-center md:justify-end gap-2 text-white"
+                >
+                  <div class="text-center sm:text-left">
+                    <span>Al Thumamh Rd., Al Rabea</span><br />
+                    <span>Riyadh, Saudi Arabia</span>
+                  </div>
+                  <i class="fa-solid fa-location-dot md:mb-4"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Bottom Footer -->
+
+      <div class="container">
+        <div class="w-5/6 mx-auto">
+          <div class="flex justify-between items-center p-3">
+            <img src="../imgs/Group 472.png" alt="Intima Logo" class="h-8" />
+            <p class="text-gray-400 text-sm">
+              © 2024 جميع الحقوق محفوظة لشركة انتماء
+            </p>
+          </div>
         </div>
       </div>
+      <script src="../dist/script.js"></script>
     </div>
-
-    <script src="../dist/script.js"></script>
-</body>
-
+  </body>
 </html>
